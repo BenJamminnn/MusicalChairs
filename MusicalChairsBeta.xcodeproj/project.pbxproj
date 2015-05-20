@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		46D6876C1B0D3C8200856BEA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D6876B1B0D3C8200856BEA /* main.m */; };
+		46D6876F1B0D3C8200856BEA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D6876E1B0D3C8200856BEA /* AppDelegate.m */; };
+		46D687721B0D3C8200856BEA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D687711B0D3C8200856BEA /* ViewController.m */; };
+		46D687751B0D3C8200856BEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46D687731B0D3C8200856BEA /* Main.storyboard */; };
+		46D687771B0D3C8200856BEA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46D687761B0D3C8200856BEA /* Images.xcassets */; };
+		46D6877A1B0D3C8200856BEA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46D687781B0D3C8200856BEA /* LaunchScreen.xib */; };
+		46D687861B0D3C8200856BEA /* MusicalChairsBetaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D687851B0D3C8200856BEA /* MusicalChairsBetaTests.m */; };
+		46D687901B0D3C8E00856BEA /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46D6878F1B0D3C8E00856BEA /* CFNetwork.framework */; };
+		46D687921B0D3C9500856BEA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46D687911B0D3C9500856BEA /* SystemConfiguration.framework */; };
+		46D687941B0D3CE400856BEA /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46D687931B0D3CE400856BEA /* AudioToolbox.framework */; };
+		46D687961B0D3CE900856BEA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46D687951B0D3CE900856BEA /* CoreGraphics.framework */; };
+		46D687981B0D3CEE00856BEA /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 46D687971B0D3CEE00856BEA /* libc++.dylib */; };
+		46D6879A1B0D3CF400856BEA /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 46D687991B0D3CF400856BEA /* libicucore.dylib */; };
+		46D6879C1B0D3CFC00856BEA /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46D6879B1B0D3CFC00856BEA /* StoreKit.framework */; };
+		46D6879E1B0D3D0400856BEA /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 46D6879D1B0D3D0400856BEA /* libz.dylib */; };
+		46D687A01B0D3D1200856BEA /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 46D6879F1B0D3D1200856BEA /* libsqlite3.dylib */; };
+		46D687A21B0D3D2500856BEA /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46D687A11B0D3D2500856BEA /* Accounts.framework */; };
+		46D687A41B0D3D2C00856BEA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46D687A31B0D3D2C00856BEA /* QuartzCore.framework */; };
+		46D687A61B0D3D3800856BEA /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46D687A51B0D3D3800856BEA /* MobileCoreServices.framework */; };
+		46D687A81B0D3D4200856BEA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46D687A71B0D3D4200856BEA /* CoreLocation.framework */; };
+		46D687AA1B0D3DBD00856BEA /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46D687A91B0D3DBD00856BEA /* ParseUI.framework */; };
+		46D687B01B0D3DC700856BEA /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46D687AB1B0D3DC700856BEA /* Bolts.framework */; };
+		46D687B11B0D3DC700856BEA /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46D687AC1B0D3DC700856BEA /* Parse.framework */; };
+		46D687B21B0D3DC700856BEA /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46D687AD1B0D3DC700856BEA /* ParseCrashReporting.framework */; };
+		46D687B31B0D3DC700856BEA /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46D687AE1B0D3DC700856BEA /* ParseFacebookUtils.framework */; };
+		46D687B41B0D3DC700856BEA /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46D687AF1B0D3DC700856BEA /* ParseFacebookUtilsV4.framework */; };
+		46D687BD1B0D3F3000856BEA /* DraggableViewBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D687B81B0D3F3000856BEA /* DraggableViewBackground.m */; };
+		46D687BE1B0D3F3000856BEA /* DraggableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D687BA1B0D3F3000856BEA /* DraggableView.m */; };
+		46D687BF1B0D3F3000856BEA /* OverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D687BC1B0D3F3000856BEA /* OverlayView.m */; };
+		46D687C31B0D411900856BEA /* SCLPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D687C21B0D411900856BEA /* SCLPlayerViewController.m */; };
+		46D687C51B0D47FB00856BEA /* soundcloudPlayer.html in Resources */ = {isa = PBXBuildFile; fileRef = 46D687C41B0D47FB00856BEA /* soundcloudPlayer.html */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		46D687801B0D3C8200856BEA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46D6875E1B0D3C8200856BEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46D687651B0D3C8200856BEA;
+			remoteInfo = MusicalChairsBeta;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		46D687661B0D3C8200856BEA /* MusicalChairsBeta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicalChairsBeta.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		46D6876A1B0D3C8200856BEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46D6876B1B0D3C8200856BEA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		46D6876D1B0D3C8200856BEA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		46D6876E1B0D3C8200856BEA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		46D687701B0D3C8200856BEA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		46D687711B0D3C8200856BEA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		46D687741B0D3C8200856BEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		46D687761B0D3C8200856BEA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		46D687791B0D3C8200856BEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		46D6877F1B0D3C8200856BEA /* MusicalChairsBetaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicalChairsBetaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		46D687841B0D3C8200856BEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46D687851B0D3C8200856BEA /* MusicalChairsBetaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MusicalChairsBetaTests.m; sourceTree = "<group>"; };
+		46D6878F1B0D3C8E00856BEA /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		46D687911B0D3C9500856BEA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		46D687931B0D3CE400856BEA /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		46D687951B0D3CE900856BEA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		46D687971B0D3CEE00856BEA /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		46D687991B0D3CF400856BEA /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		46D6879B1B0D3CFC00856BEA /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		46D6879D1B0D3D0400856BEA /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		46D6879F1B0D3D1200856BEA /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		46D687A11B0D3D2500856BEA /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		46D687A31B0D3D2C00856BEA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		46D687A51B0D3D3800856BEA /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		46D687A71B0D3D4200856BEA /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		46D687A91B0D3DBD00856BEA /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
+		46D687AB1B0D3DC700856BEA /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		46D687AC1B0D3DC700856BEA /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		46D687AD1B0D3DC700856BEA /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
+		46D687AE1B0D3DC700856BEA /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
+		46D687AF1B0D3DC700856BEA /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
+		46D687B71B0D3F3000856BEA /* DraggableViewBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DraggableViewBackground.h; sourceTree = "<group>"; };
+		46D687B81B0D3F3000856BEA /* DraggableViewBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DraggableViewBackground.m; sourceTree = "<group>"; };
+		46D687B91B0D3F3000856BEA /* DraggableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DraggableView.h; sourceTree = "<group>"; };
+		46D687BA1B0D3F3000856BEA /* DraggableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DraggableView.m; sourceTree = "<group>"; };
+		46D687BB1B0D3F3000856BEA /* OverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayView.h; sourceTree = "<group>"; };
+		46D687BC1B0D3F3000856BEA /* OverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayView.m; sourceTree = "<group>"; };
+		46D687C11B0D411900856BEA /* SCLPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCLPlayerViewController.h; sourceTree = "<group>"; };
+		46D687C21B0D411900856BEA /* SCLPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCLPlayerViewController.m; sourceTree = "<group>"; };
+		46D687C41B0D47FB00856BEA /* soundcloudPlayer.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = soundcloudPlayer.html; path = MusicalChairsBeta/soundcloudPlayer.html; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		46D687631B0D3C8200856BEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46D687B01B0D3DC700856BEA /* Bolts.framework in Frameworks */,
+				46D687A81B0D3D4200856BEA /* CoreLocation.framework in Frameworks */,
+				46D687B41B0D3DC700856BEA /* ParseFacebookUtilsV4.framework in Frameworks */,
+				46D687B31B0D3DC700856BEA /* ParseFacebookUtils.framework in Frameworks */,
+				46D687A61B0D3D3800856BEA /* MobileCoreServices.framework in Frameworks */,
+				46D687B21B0D3DC700856BEA /* ParseCrashReporting.framework in Frameworks */,
+				46D687AA1B0D3DBD00856BEA /* ParseUI.framework in Frameworks */,
+				46D687A41B0D3D2C00856BEA /* QuartzCore.framework in Frameworks */,
+				46D687A21B0D3D2500856BEA /* Accounts.framework in Frameworks */,
+				46D687B11B0D3DC700856BEA /* Parse.framework in Frameworks */,
+				46D6879E1B0D3D0400856BEA /* libz.dylib in Frameworks */,
+				46D687A01B0D3D1200856BEA /* libsqlite3.dylib in Frameworks */,
+				46D6879C1B0D3CFC00856BEA /* StoreKit.framework in Frameworks */,
+				46D6879A1B0D3CF400856BEA /* libicucore.dylib in Frameworks */,
+				46D687981B0D3CEE00856BEA /* libc++.dylib in Frameworks */,
+				46D687961B0D3CE900856BEA /* CoreGraphics.framework in Frameworks */,
+				46D687941B0D3CE400856BEA /* AudioToolbox.framework in Frameworks */,
+				46D687921B0D3C9500856BEA /* SystemConfiguration.framework in Frameworks */,
+				46D687901B0D3C8E00856BEA /* CFNetwork.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46D6877C1B0D3C8200856BEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		46D6875D1B0D3C8200856BEA = {
+			isa = PBXGroup;
+			children = (
+				46D687C01B0D410800856BEA /* SoundCloud Player */,
+				46D687B61B0D3F1C00856BEA /* DraggableView */,
+				46D687B51B0D3DD700856BEA /* Frameworks */,
+				46D687681B0D3C8200856BEA /* MusicalChairsBeta */,
+				46D687821B0D3C8200856BEA /* MusicalChairsBetaTests */,
+				46D687671B0D3C8200856BEA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		46D687671B0D3C8200856BEA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				46D687661B0D3C8200856BEA /* MusicalChairsBeta.app */,
+				46D6877F1B0D3C8200856BEA /* MusicalChairsBetaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		46D687681B0D3C8200856BEA /* MusicalChairsBeta */ = {
+			isa = PBXGroup;
+			children = (
+				46D6876D1B0D3C8200856BEA /* AppDelegate.h */,
+				46D6876E1B0D3C8200856BEA /* AppDelegate.m */,
+				46D687701B0D3C8200856BEA /* ViewController.h */,
+				46D687711B0D3C8200856BEA /* ViewController.m */,
+				46D687731B0D3C8200856BEA /* Main.storyboard */,
+				46D687761B0D3C8200856BEA /* Images.xcassets */,
+				46D687781B0D3C8200856BEA /* LaunchScreen.xib */,
+				46D687691B0D3C8200856BEA /* Supporting Files */,
+			);
+			path = MusicalChairsBeta;
+			sourceTree = "<group>";
+		};
+		46D687691B0D3C8200856BEA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				46D6876A1B0D3C8200856BEA /* Info.plist */,
+				46D6876B1B0D3C8200856BEA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		46D687821B0D3C8200856BEA /* MusicalChairsBetaTests */ = {
+			isa = PBXGroup;
+			children = (
+				46D687851B0D3C8200856BEA /* MusicalChairsBetaTests.m */,
+				46D687831B0D3C8200856BEA /* Supporting Files */,
+			);
+			path = MusicalChairsBetaTests;
+			sourceTree = "<group>";
+		};
+		46D687831B0D3C8200856BEA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				46D687841B0D3C8200856BEA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		46D687B51B0D3DD700856BEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				46D687AB1B0D3DC700856BEA /* Bolts.framework */,
+				46D687AC1B0D3DC700856BEA /* Parse.framework */,
+				46D687AD1B0D3DC700856BEA /* ParseCrashReporting.framework */,
+				46D687AE1B0D3DC700856BEA /* ParseFacebookUtils.framework */,
+				46D687AF1B0D3DC700856BEA /* ParseFacebookUtilsV4.framework */,
+				46D687A91B0D3DBD00856BEA /* ParseUI.framework */,
+				46D687A71B0D3D4200856BEA /* CoreLocation.framework */,
+				46D687A51B0D3D3800856BEA /* MobileCoreServices.framework */,
+				46D687A31B0D3D2C00856BEA /* QuartzCore.framework */,
+				46D687A11B0D3D2500856BEA /* Accounts.framework */,
+				46D6879F1B0D3D1200856BEA /* libsqlite3.dylib */,
+				46D6879D1B0D3D0400856BEA /* libz.dylib */,
+				46D6879B1B0D3CFC00856BEA /* StoreKit.framework */,
+				46D687991B0D3CF400856BEA /* libicucore.dylib */,
+				46D687971B0D3CEE00856BEA /* libc++.dylib */,
+				46D687951B0D3CE900856BEA /* CoreGraphics.framework */,
+				46D687931B0D3CE400856BEA /* AudioToolbox.framework */,
+				46D687911B0D3C9500856BEA /* SystemConfiguration.framework */,
+				46D6878F1B0D3C8E00856BEA /* CFNetwork.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		46D687B61B0D3F1C00856BEA /* DraggableView */ = {
+			isa = PBXGroup;
+			children = (
+				46D687B71B0D3F3000856BEA /* DraggableViewBackground.h */,
+				46D687B81B0D3F3000856BEA /* DraggableViewBackground.m */,
+				46D687B91B0D3F3000856BEA /* DraggableView.h */,
+				46D687BA1B0D3F3000856BEA /* DraggableView.m */,
+				46D687BB1B0D3F3000856BEA /* OverlayView.h */,
+				46D687BC1B0D3F3000856BEA /* OverlayView.m */,
+			);
+			name = DraggableView;
+			sourceTree = "<group>";
+		};
+		46D687C01B0D410800856BEA /* SoundCloud Player */ = {
+			isa = PBXGroup;
+			children = (
+				46D687C41B0D47FB00856BEA /* soundcloudPlayer.html */,
+				46D687C11B0D411900856BEA /* SCLPlayerViewController.h */,
+				46D687C21B0D411900856BEA /* SCLPlayerViewController.m */,
+			);
+			name = "SoundCloud Player";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		46D687651B0D3C8200856BEA /* MusicalChairsBeta */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46D687891B0D3C8200856BEA /* Build configuration list for PBXNativeTarget "MusicalChairsBeta" */;
+			buildPhases = (
+				46D687621B0D3C8200856BEA /* Sources */,
+				46D687631B0D3C8200856BEA /* Frameworks */,
+				46D687641B0D3C8200856BEA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MusicalChairsBeta;
+			productName = MusicalChairsBeta;
+			productReference = 46D687661B0D3C8200856BEA /* MusicalChairsBeta.app */;
+			productType = "com.apple.product-type.application";
+		};
+		46D6877E1B0D3C8200856BEA /* MusicalChairsBetaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46D6878C1B0D3C8200856BEA /* Build configuration list for PBXNativeTarget "MusicalChairsBetaTests" */;
+			buildPhases = (
+				46D6877B1B0D3C8200856BEA /* Sources */,
+				46D6877C1B0D3C8200856BEA /* Frameworks */,
+				46D6877D1B0D3C8200856BEA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				46D687811B0D3C8200856BEA /* PBXTargetDependency */,
+			);
+			name = MusicalChairsBetaTests;
+			productName = MusicalChairsBetaTests;
+			productReference = 46D6877F1B0D3C8200856BEA /* MusicalChairsBetaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		46D6875E1B0D3C8200856BEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = BG;
+				TargetAttributes = {
+					46D687651B0D3C8200856BEA = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					46D6877E1B0D3C8200856BEA = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 46D687651B0D3C8200856BEA;
+					};
+				};
+			};
+			buildConfigurationList = 46D687611B0D3C8200856BEA /* Build configuration list for PBXProject "MusicalChairsBeta" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 46D6875D1B0D3C8200856BEA;
+			productRefGroup = 46D687671B0D3C8200856BEA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				46D687651B0D3C8200856BEA /* MusicalChairsBeta */,
+				46D6877E1B0D3C8200856BEA /* MusicalChairsBetaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		46D687641B0D3C8200856BEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46D687751B0D3C8200856BEA /* Main.storyboard in Resources */,
+				46D687C51B0D47FB00856BEA /* soundcloudPlayer.html in Resources */,
+				46D6877A1B0D3C8200856BEA /* LaunchScreen.xib in Resources */,
+				46D687771B0D3C8200856BEA /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46D6877D1B0D3C8200856BEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		46D687621B0D3C8200856BEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46D687BD1B0D3F3000856BEA /* DraggableViewBackground.m in Sources */,
+				46D687BF1B0D3F3000856BEA /* OverlayView.m in Sources */,
+				46D687721B0D3C8200856BEA /* ViewController.m in Sources */,
+				46D6876F1B0D3C8200856BEA /* AppDelegate.m in Sources */,
+				46D6876C1B0D3C8200856BEA /* main.m in Sources */,
+				46D687C31B0D411900856BEA /* SCLPlayerViewController.m in Sources */,
+				46D687BE1B0D3F3000856BEA /* DraggableView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46D6877B1B0D3C8200856BEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46D687861B0D3C8200856BEA /* MusicalChairsBetaTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		46D687811B0D3C8200856BEA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 46D687651B0D3C8200856BEA /* MusicalChairsBeta */;
+			targetProxy = 46D687801B0D3C8200856BEA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		46D687731B0D3C8200856BEA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46D687741B0D3C8200856BEA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		46D687781B0D3C8200856BEA /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46D687791B0D3C8200856BEA /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		46D687871B0D3C8200856BEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		46D687881B0D3C8200856BEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		46D6878A1B0D3C8200856BEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = MusicalChairsBeta/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		46D6878B1B0D3C8200856BEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = MusicalChairsBeta/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		46D6878D1B0D3C8200856BEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MusicalChairsBetaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MusicalChairsBeta.app/MusicalChairsBeta";
+			};
+			name = Debug;
+		};
+		46D6878E1B0D3C8200856BEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MusicalChairsBetaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MusicalChairsBeta.app/MusicalChairsBeta";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		46D687611B0D3C8200856BEA /* Build configuration list for PBXProject "MusicalChairsBeta" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46D687871B0D3C8200856BEA /* Debug */,
+				46D687881B0D3C8200856BEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46D687891B0D3C8200856BEA /* Build configuration list for PBXNativeTarget "MusicalChairsBeta" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46D6878A1B0D3C8200856BEA /* Debug */,
+				46D6878B1B0D3C8200856BEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		46D6878C1B0D3C8200856BEA /* Build configuration list for PBXNativeTarget "MusicalChairsBetaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46D6878D1B0D3C8200856BEA /* Debug */,
+				46D6878E1B0D3C8200856BEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 46D6875E1B0D3C8200856BEA /* Project object */;
+}
