@@ -7,9 +7,13 @@
 //
 
 #import "AppDelegate.h"
+#import "DMPagerViewController.h"
+#import "ViewController.h"
+#import "ChatViewController.h"
+#import "SettingsViewController.h"
 
 @interface AppDelegate ()
-
+@property (nonatomic, strong) DMPagerViewController *pagingController;
 @end
 
 @implementation AppDelegate
@@ -17,6 +21,36 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    
+    //Attributed Strings for titles
+    NSDictionary *textAttributes = @{ NSFontAttributeName : [UIFont systemFontOfSize:2.0f],
+                                      NSForegroundColorAttributeName : [UIColor blackColor]};
+    NSAttributedString *chooseArtist = [[NSAttributedString alloc]initWithString:@"Search" attributes:textAttributes];
+    NSAttributedString *chat = [[NSAttributedString alloc]initWithString:@"Chat" attributes:textAttributes];
+    NSAttributedString *settings = [[NSAttributedString alloc]initWithString:@"Settings" attributes:textAttributes];
+
+    //CREATING VIEW CONTROLLERS
+    ViewController *chooseArtistViewController = [[ViewController alloc]init];
+    chooseArtistViewController.pagerObj = [DMPagerNavigationBarItem newItemWithText:chooseArtist andIcon:[UIImage imageNamed:@"chat_full"] renderingMode:DMPagerNavigationBarItemModeOnlyImage];
+    
+    ChatViewController *chatController = [ChatViewController new];
+    chatController.pagerObj = [DMPagerNavigationBarItem newItemWithText:chat andIcon:[UIImage imageNamed:@"rchat"]renderingMode:DMPagerNavigationBarItemModeOnlyImage];
+    
+    SettingsViewController *settingsController = [SettingsViewController new];
+    settingsController.pagerObj = [DMPagerNavigationBarItem newItemWithText:settings andIcon:[UIImage imageNamed:@"gear"]renderingMode:DMPagerNavigationBarItemModeOnlyImage];
+    
+    //CREATING PAGING CONTROLLER
+    self.pagingController = [[DMPagerViewController alloc]initWithViewControllers:@[settingsController, chooseArtistViewController, chatController]];
+    
+    UIColor *inactiveColor = [UIColor lightGrayColor];
+    UIColor *activeColor = [UIColor redColor];
+    self.pagingController.navigationBar.activeItemColor = activeColor;
+    self.pagingController.navigationBar.inactiveItemColor = inactiveColor;
+    self.pagingController.animation = DMPagerViewControllerAnimationEaseInOut;
+    self.window.rootViewController = self.pagingController;
+    
     return YES;
 }
 

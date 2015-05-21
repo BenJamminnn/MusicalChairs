@@ -43,8 +43,8 @@ static const float CARD_WIDTH = 290; //%%% width of the draggable card
 {
     self.backgroundColor = [UIColor orangeColor]; //the gray background colors
 
-    CGPoint landingCoordinatesXButton = CGPointMake(self.frame.size.width/6, self.frame.size.height/1.2);
-    CGPoint landingCoordinatesYButton = CGPointMake(self.frame.size.width/1.5, self.frame.size.height/1.2);
+    CGPoint landingCoordinatesXButton = CGPointMake(self.frame.size.width/6, self.frame.size.height/1.15);
+    CGPoint landingCoordinatesYButton = CGPointMake(self.frame.size.width/1.5, self.frame.size.height/1.15);
     
     xButton = [[UIButton alloc]initWithFrame:CGRectMake(landingCoordinatesXButton.x, landingCoordinatesXButton.y, 59, 59)];
     [xButton setImage:[UIImage imageNamed:@"xButton"] forState:UIControlStateNormal];
@@ -57,22 +57,17 @@ static const float CARD_WIDTH = 290; //%%% width of the draggable card
     [self addSubview:checkButton];
 }
 
-#warning include own card customization here!
 //%%% creates a card and returns it.  This should be customized to fit your needs.
 // use "index" to indicate where the information should be pulled.  If this doesn't apply to you, feel free
 // to get rid of it (eg: if you are building cards from data from the internet)
 -(DraggableView *)createDraggableViewWithDataAtIndex:(NSInteger)index
 {
     unsigned int randomURLIndex = arc4random_uniform((int)self.URLs.count);
-    
     DraggableView *draggableView = [[DraggableView alloc]initWithFrame:CGRectMake((self.frame.size.width - CARD_WIDTH)/2, (self.frame.size.height - CARD_HEIGHT)/2, CARD_WIDTH, CARD_HEIGHT) andURL:[self.URLs objectAtIndex:randomURLIndex]];
     draggableView.delegate = self;
 
     return draggableView;
 }
-
-
-
 
 //%%% loads all the cards and puts the first x in the "loaded cards" array
 -(void)loadCards

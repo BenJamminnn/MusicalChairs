@@ -8,6 +8,9 @@
 
 #import "ViewController.h"
 #import "DraggableViewBackground.h"
+#import "DMPagerViewController.h"
+
+
 @interface ViewController ()
 
 @end
@@ -20,5 +23,8 @@
     [self.view addSubview:background];
 }
 
+- (DMPagerNavigationBarItem *)pagerItem {
+    return self.pagerObj;
+}
 
 @end

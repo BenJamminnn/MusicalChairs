@@ -1,8 +1,8 @@
 //
-//  ViewController.h
+//  SettingsViewController.h
 //  MusicalChairsBeta
 //
-//  Created by Mac Admin on 5/20/15.
+//  Created by Mac Admin on 5/21/15.
 //  Copyright (c) 2015 BG. All rights reserved.
 //
 
@@ -11,9 +11,8 @@
 
 @class DMPagerNavigationBarItem;
 
-@interface ViewController : UIViewController <DMPagerViewControllerProtocol>
+@interface SettingsViewController : UIViewController <DMPagerViewControllerProtocol>
 
 @property (nonatomic, strong) DMPagerNavigationBarItem *pagerObj;
 
 @end
-

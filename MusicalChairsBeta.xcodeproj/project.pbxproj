@@ -38,6 +38,10 @@
 		46D687BF1B0D3F3000856BEA /* OverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D687BC1B0D3F3000856BEA /* OverlayView.m */; };
 		46D687C31B0D411900856BEA /* SCLPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D687C21B0D411900856BEA /* SCLPlayerViewController.m */; };
 		46D687C51B0D47FB00856BEA /* soundcloudPlayer.html in Resources */ = {isa = PBXBuildFile; fileRef = 46D687C41B0D47FB00856BEA /* soundcloudPlayer.html */; };
+		46D687CB1B0D519100856BEA /* DMPagerNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D687C81B0D519100856BEA /* DMPagerNavigationBar.m */; };
+		46D687CC1B0D519100856BEA /* DMPagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D687CA1B0D519100856BEA /* DMPagerViewController.m */; };
+		46D687D01B0E677E00856BEA /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D687CF1B0E677E00856BEA /* ChatViewController.m */; };
+		46D687D31B0E687500856BEA /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D687D21B0E687500856BEA /* SettingsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +96,15 @@
 		46D687C11B0D411900856BEA /* SCLPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCLPlayerViewController.h; sourceTree = "<group>"; };
 		46D687C21B0D411900856BEA /* SCLPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCLPlayerViewController.m; sourceTree = "<group>"; };
 		46D687C41B0D47FB00856BEA /* soundcloudPlayer.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = soundcloudPlayer.html; path = MusicalChairsBeta/soundcloudPlayer.html; sourceTree = "<group>"; };
+		46D687C71B0D519100856BEA /* DMPagerNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMPagerNavigationBar.h; sourceTree = "<group>"; };
+		46D687C81B0D519100856BEA /* DMPagerNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMPagerNavigationBar.m; sourceTree = "<group>"; };
+		46D687C91B0D519100856BEA /* DMPagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMPagerViewController.h; sourceTree = "<group>"; };
+		46D687CA1B0D519100856BEA /* DMPagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMPagerViewController.m; sourceTree = "<group>"; };
+		46D687CE1B0E677E00856BEA /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
+		46D687CF1B0E677E00856BEA /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
+		46D687D11B0E687500856BEA /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		46D687D21B0E687500856BEA /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		9EBAEB4B22DA766221EC3478 /* libPods-MusicalChairsBeta.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MusicalChairsBeta.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +147,7 @@
 		46D6875D1B0D3C8200856BEA = {
 			isa = PBXGroup;
 			children = (
+				46D687C61B0D517900856BEA /* DMPagerViewController */,
 				46D687C01B0D410800856BEA /* SoundCloud Player */,
 				46D687B61B0D3F1C00856BEA /* DraggableView */,
 				46D687B51B0D3DD700856BEA /* Frameworks */,
@@ -155,10 +169,9 @@
 		46D687681B0D3C8200856BEA /* MusicalChairsBeta */ = {
 			isa = PBXGroup;
 			children = (
+				46D687CD1B0E673300856BEA /* View Controllers */,
 				46D6876D1B0D3C8200856BEA /* AppDelegate.h */,
 				46D6876E1B0D3C8200856BEA /* AppDelegate.m */,
-				46D687701B0D3C8200856BEA /* ViewController.h */,
-				46D687711B0D3C8200856BEA /* ViewController.m */,
 				46D687731B0D3C8200856BEA /* Main.storyboard */,
 				46D687761B0D3C8200856BEA /* Images.xcassets */,
 				46D687781B0D3C8200856BEA /* LaunchScreen.xib */,
@@ -215,6 +228,7 @@
 				46D687931B0D3CE400856BEA /* AudioToolbox.framework */,
 				46D687911B0D3C9500856BEA /* SystemConfiguration.framework */,
 				46D6878F1B0D3C8E00856BEA /* CFNetwork.framework */,
+				9EBAEB4B22DA766221EC3478 /* libPods-MusicalChairsBeta.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -240,6 +254,30 @@
 				46D687C21B0D411900856BEA /* SCLPlayerViewController.m */,
 			);
 			name = "SoundCloud Player";
+			sourceTree = "<group>";
+		};
+		46D687C61B0D517900856BEA /* DMPagerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				46D687C71B0D519100856BEA /* DMPagerNavigationBar.h */,
+				46D687C81B0D519100856BEA /* DMPagerNavigationBar.m */,
+				46D687C91B0D519100856BEA /* DMPagerViewController.h */,
+				46D687CA1B0D519100856BEA /* DMPagerViewController.m */,
+			);
+			name = DMPagerViewController;
+			sourceTree = "<group>";
+		};
+		46D687CD1B0E673300856BEA /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				46D687CE1B0E677E00856BEA /* ChatViewController.h */,
+				46D687CF1B0E677E00856BEA /* ChatViewController.m */,
+				46D687701B0D3C8200856BEA /* ViewController.h */,
+				46D687711B0D3C8200856BEA /* ViewController.m */,
+				46D687D11B0E687500856BEA /* SettingsViewController.h */,
+				46D687D21B0E687500856BEA /* SettingsViewController.m */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -345,10 +383,14 @@
 			files = (
 				46D687BD1B0D3F3000856BEA /* DraggableViewBackground.m in Sources */,
 				46D687BF1B0D3F3000856BEA /* OverlayView.m in Sources */,
+				46D687D01B0E677E00856BEA /* ChatViewController.m in Sources */,
 				46D687721B0D3C8200856BEA /* ViewController.m in Sources */,
 				46D6876F1B0D3C8200856BEA /* AppDelegate.m in Sources */,
 				46D6876C1B0D3C8200856BEA /* main.m in Sources */,
 				46D687C31B0D411900856BEA /* SCLPlayerViewController.m in Sources */,
+				46D687CB1B0D519100856BEA /* DMPagerNavigationBar.m in Sources */,
+				46D687D31B0E687500856BEA /* SettingsViewController.m in Sources */,
+				46D687CC1B0D519100856BEA /* DMPagerViewController.m in Sources */,
 				46D687BE1B0D3F3000856BEA /* DraggableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -548,6 +590,7 @@
 				46D6878B1B0D3C8200856BEA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		46D6878C1B0D3C8200856BEA /* Build configuration list for PBXNativeTarget "MusicalChairsBetaTests" */ = {
 			isa = XCConfigurationList;
@@ -556,6 +599,7 @@
 				46D6878E1B0D3C8200856BEA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
