@@ -29,7 +29,7 @@
 }
 
 
-#warning hacky trick around rendering mode for image only 
+#warning hacky trick around rendering mode for image only
 + (DMPagerNavigationBarItem *) newItemWithText:(NSAttributedString *)aTitle andIcon:(UIImage *)aIcon renderingMode:(DMPagerNavigationBarItemMode)renderingMode {
     DMPagerNavigationBarItem *item = [DMPagerNavigationBarItem newItemWithText:aTitle andIcon:aIcon];
     item.renderingMode = renderingMode;

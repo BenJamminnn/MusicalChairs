@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "DraggableViewBackground.h"
 #import "DMPagerViewController.h"
-
+#import <Firebase/Firebase.h>
 
 @interface ViewController ()
 
@@ -20,7 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     DraggableViewBackground *background = [[DraggableViewBackground alloc]initWithFrame:self.view.frame];
-    [self.view addSubview:background];
+    [self.view addSubview:background];    
 }
 
 - (DMPagerNavigationBarItem *)pagerItem {

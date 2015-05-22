@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>FireBase.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>MusicalChairsBeta.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -18,6 +23,16 @@
 			<true/>
 		</dict>
 		<key>46D6877E1B0D3C8200856BEA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>46D687D71B0FCFEA00856BEA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>46D687E11B0FCFEA00856BEA</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -18,8 +18,6 @@
 		46D687921B0D3C9500856BEA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46D687911B0D3C9500856BEA /* SystemConfiguration.framework */; };
 		46D687941B0D3CE400856BEA /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46D687931B0D3CE400856BEA /* AudioToolbox.framework */; };
 		46D687961B0D3CE900856BEA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46D687951B0D3CE900856BEA /* CoreGraphics.framework */; };
-		46D687981B0D3CEE00856BEA /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 46D687971B0D3CEE00856BEA /* libc++.dylib */; };
-		46D6879A1B0D3CF400856BEA /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 46D687991B0D3CF400856BEA /* libicucore.dylib */; };
 		46D6879C1B0D3CFC00856BEA /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46D6879B1B0D3CFC00856BEA /* StoreKit.framework */; };
 		46D6879E1B0D3D0400856BEA /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 46D6879D1B0D3D0400856BEA /* libz.dylib */; };
 		46D687A01B0D3D1200856BEA /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 46D6879F1B0D3D1200856BEA /* libsqlite3.dylib */; };
@@ -42,6 +40,10 @@
 		46D687CC1B0D519100856BEA /* DMPagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D687CA1B0D519100856BEA /* DMPagerViewController.m */; };
 		46D687D01B0E677E00856BEA /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D687CF1B0E677E00856BEA /* ChatViewController.m */; };
 		46D687D31B0E687500856BEA /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D687D21B0E687500856BEA /* SettingsViewController.m */; };
+		46D688EB1B0FD43F00856BEA /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46D688EA1B0FD43F00856BEA /* Firebase.framework */; };
+		46D688ED1B0FD4BA00856BEA /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 46D688EC1B0FD4BA00856BEA /* libc++.dylib */; };
+		46D688EF1B0FD4C100856BEA /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 46D688EE1B0FD4C100856BEA /* libicucore.dylib */; };
+		46D688F01B0FD4DF00856BEA /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46D688B91B0FD16200856BEA /* Security.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,8 +74,6 @@
 		46D687911B0D3C9500856BEA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		46D687931B0D3CE400856BEA /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		46D687951B0D3CE900856BEA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		46D687971B0D3CEE00856BEA /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
-		46D687991B0D3CF400856BEA /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
 		46D6879B1B0D3CFC00856BEA /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		46D6879D1B0D3D0400856BEA /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		46D6879F1B0D3D1200856BEA /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
@@ -104,7 +104,10 @@
 		46D687CF1B0E677E00856BEA /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
 		46D687D11B0E687500856BEA /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		46D687D21B0E687500856BEA /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
-		9EBAEB4B22DA766221EC3478 /* libPods-MusicalChairsBeta.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MusicalChairsBeta.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		46D688B91B0FD16200856BEA /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		46D688EA1B0FD43F00856BEA /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Firebase.framework; path = ../Firebase/Pods/Firebase/Firebase.framework; sourceTree = "<group>"; };
+		46D688EC1B0FD4BA00856BEA /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		46D688EE1B0FD4C100856BEA /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,7 +115,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46D688F01B0FD4DF00856BEA /* Security.framework in Frameworks */,
+				46D687921B0D3C9500856BEA /* SystemConfiguration.framework in Frameworks */,
+				46D688EF1B0FD4C100856BEA /* libicucore.dylib in Frameworks */,
+				46D688ED1B0FD4BA00856BEA /* libc++.dylib in Frameworks */,
 				46D687B01B0D3DC700856BEA /* Bolts.framework in Frameworks */,
+				46D688EB1B0FD43F00856BEA /* Firebase.framework in Frameworks */,
 				46D687A81B0D3D4200856BEA /* CoreLocation.framework in Frameworks */,
 				46D687B41B0D3DC700856BEA /* ParseFacebookUtilsV4.framework in Frameworks */,
 				46D687B31B0D3DC700856BEA /* ParseFacebookUtils.framework in Frameworks */,
@@ -125,11 +133,8 @@
 				46D6879E1B0D3D0400856BEA /* libz.dylib in Frameworks */,
 				46D687A01B0D3D1200856BEA /* libsqlite3.dylib in Frameworks */,
 				46D6879C1B0D3CFC00856BEA /* StoreKit.framework in Frameworks */,
-				46D6879A1B0D3CF400856BEA /* libicucore.dylib in Frameworks */,
-				46D687981B0D3CEE00856BEA /* libc++.dylib in Frameworks */,
 				46D687961B0D3CE900856BEA /* CoreGraphics.framework in Frameworks */,
 				46D687941B0D3CE400856BEA /* AudioToolbox.framework in Frameworks */,
-				46D687921B0D3C9500856BEA /* SystemConfiguration.framework in Frameworks */,
 				46D687901B0D3C8E00856BEA /* CFNetwork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -209,6 +214,10 @@
 		46D687B51B0D3DD700856BEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				46D688EE1B0FD4C100856BEA /* libicucore.dylib */,
+				46D688EC1B0FD4BA00856BEA /* libc++.dylib */,
+				46D688EA1B0FD43F00856BEA /* Firebase.framework */,
+				46D688B91B0FD16200856BEA /* Security.framework */,
 				46D687AB1B0D3DC700856BEA /* Bolts.framework */,
 				46D687AC1B0D3DC700856BEA /* Parse.framework */,
 				46D687AD1B0D3DC700856BEA /* ParseCrashReporting.framework */,
@@ -222,13 +231,10 @@
 				46D6879F1B0D3D1200856BEA /* libsqlite3.dylib */,
 				46D6879D1B0D3D0400856BEA /* libz.dylib */,
 				46D6879B1B0D3CFC00856BEA /* StoreKit.framework */,
-				46D687991B0D3CF400856BEA /* libicucore.dylib */,
-				46D687971B0D3CEE00856BEA /* libc++.dylib */,
 				46D687951B0D3CE900856BEA /* CoreGraphics.framework */,
 				46D687931B0D3CE400856BEA /* AudioToolbox.framework */,
 				46D687911B0D3C9500856BEA /* SystemConfiguration.framework */,
 				46D6878F1B0D3C8E00856BEA /* CFNetwork.framework */,
-				9EBAEB4B22DA766221EC3478 /* libPods-MusicalChairsBeta.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -516,9 +522,11 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					/Users/macadmin/Documents/Projects/Firebase/Pods/Firebase,
 				);
 				INFOPLIST_FILE = MusicalChairsBeta/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -530,9 +538,11 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					/Users/macadmin/Documents/Projects/Firebase/Pods/Firebase,
 				);
 				INFOPLIST_FILE = MusicalChairsBeta/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
