@@ -1,0 +1,22 @@
+PODS:
+  - Bolts/Tasks (1.1.5)
+  - Firebase (2.2.2)
+  - JSQMessagesViewController (7.0.2):
+    - JSQSystemSoundPlayer (~> 2.0.1)
+  - JSQSystemSoundPlayer (2.0.1)
+  - Parse (1.7.4):
+    - Bolts/Tasks (>= 1.1.5)
+
+DEPENDENCIES:
+  - Firebase
+  - JSQMessagesViewController
+  - Parse
+
+SPEC CHECKSUMS:
+  Bolts: aac24961496d504aa56fc267cde95162a71bac39
+  Firebase: e35cdd2561bf4fea9c1e384e9400a9c173d19e47
+  JSQMessagesViewController: bb6649691182b1899dc52b42266ad69efc473510
+  JSQSystemSoundPlayer: c5850e77a4363ffd374cd851154b9af93264ed8d
+  Parse: 6ca512c6e860b66739c95151b2f76ac4712b7842
+
+COCOAPODS: 0.36.0

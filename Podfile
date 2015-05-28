@@ -2,7 +2,10 @@
 # platform :ios, '6.0'
 
 target 'MusicalChairsBeta' do
-pod 'Firebase', '>= 2.2.2'
+pod 'JSQMessagesViewController'  
+pod 'Parse'  
+pod 'Firebase'
+
 end
 
 target 'MusicalChairsBetaTests' do
