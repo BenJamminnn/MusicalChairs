@@ -43,8 +43,8 @@ static const float CARD_WIDTH = 290; //%%% width of the draggable card
 {
     self.backgroundColor = [UIColor orangeColor]; //the gray background colors
 
-    CGPoint landingCoordinatesXButton = CGPointMake(self.frame.size.width/6, self.frame.size.height/1.15);
-    CGPoint landingCoordinatesYButton = CGPointMake(self.frame.size.width/1.5, self.frame.size.height/1.15);
+    CGPoint landingCoordinatesXButton = CGPointMake(self.frame.size.width/6, self.frame.size.height/1.3);
+    CGPoint landingCoordinatesYButton = CGPointMake(self.frame.size.width/1.5, self.frame.size.height/1.3);
     
     xButton = [[UIButton alloc]initWithFrame:CGRectMake(landingCoordinatesXButton.x, landingCoordinatesXButton.y, 59, 59)];
     [xButton setImage:[UIImage imageNamed:@"xButton"] forState:UIControlStateNormal];
@@ -63,7 +63,7 @@ static const float CARD_WIDTH = 290; //%%% width of the draggable card
 -(DraggableView *)createDraggableViewWithDataAtIndex:(NSInteger)index
 {
     unsigned int randomURLIndex = arc4random_uniform((int)self.URLs.count);
-    DraggableView *draggableView = [[DraggableView alloc]initWithFrame:CGRectMake((self.frame.size.width - CARD_WIDTH)/2, (self.frame.size.height - CARD_HEIGHT)/2, CARD_WIDTH, CARD_HEIGHT) andURL:[self.URLs objectAtIndex:randomURLIndex]];
+    DraggableView *draggableView = [[DraggableView alloc]initWithFrame:CGRectMake((self.frame.size.width - CARD_WIDTH)/2, (self.frame.size.height - CARD_HEIGHT)/3.3, CARD_WIDTH, CARD_HEIGHT) andURL:[self.URLs objectAtIndex:randomURLIndex]];
     draggableView.delegate = self;
 
     return draggableView;

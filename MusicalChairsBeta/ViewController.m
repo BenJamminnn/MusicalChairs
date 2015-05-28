@@ -9,7 +9,6 @@
 #import "ViewController.h"
 #import "DraggableViewBackground.h"
 #import "DMPagerViewController.h"
-#import <Firebase/Firebase.h>
 
 @interface ViewController ()
 

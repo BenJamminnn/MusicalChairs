@@ -40,7 +40,6 @@
 		46D687CC1B0D519100856BEA /* DMPagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D687CA1B0D519100856BEA /* DMPagerViewController.m */; };
 		46D687D01B0E677E00856BEA /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D687CF1B0E677E00856BEA /* ChatViewController.m */; };
 		46D687D31B0E687500856BEA /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D687D21B0E687500856BEA /* SettingsViewController.m */; };
-		46D688EB1B0FD43F00856BEA /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46D688EA1B0FD43F00856BEA /* Firebase.framework */; };
 		46D688ED1B0FD4BA00856BEA /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 46D688EC1B0FD4BA00856BEA /* libc++.dylib */; };
 		46D688EF1B0FD4C100856BEA /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 46D688EE1B0FD4C100856BEA /* libicucore.dylib */; };
 		46D688F01B0FD4DF00856BEA /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46D688B91B0FD16200856BEA /* Security.framework */; };
@@ -120,7 +119,6 @@
 				46D688EF1B0FD4C100856BEA /* libicucore.dylib in Frameworks */,
 				46D688ED1B0FD4BA00856BEA /* libc++.dylib in Frameworks */,
 				46D687B01B0D3DC700856BEA /* Bolts.framework in Frameworks */,
-				46D688EB1B0FD43F00856BEA /* Firebase.framework in Frameworks */,
 				46D687A81B0D3D4200856BEA /* CoreLocation.framework in Frameworks */,
 				46D687B41B0D3DC700856BEA /* ParseFacebookUtilsV4.framework in Frameworks */,
 				46D687B31B0D3DC700856BEA /* ParseFacebookUtils.framework in Frameworks */,
