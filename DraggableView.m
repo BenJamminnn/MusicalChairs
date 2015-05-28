@@ -215,7 +215,7 @@
 -(void)rightClickAction
 {
     CGPoint finishPoint = CGPointMake(600, self.center.y);
-    [UIView animateWithDuration:0.3
+    [UIView animateWithDuration:0.6
                      animations:^{
                          self.center = finishPoint;
                          self.transform = CGAffineTransformMakeRotation(1);
@@ -231,7 +231,7 @@
 -(void)leftClickAction
 {
     CGPoint finishPoint = CGPointMake(-600, self.center.y);
-    [UIView animateWithDuration:0.3
+    [UIView animateWithDuration:0.6
                      animations:^{
                          self.center = finishPoint;
                          self.transform = CGAffineTransformMakeRotation(-1);
