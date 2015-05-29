@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4615DFE11B191FE600319ABE /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4615DFE01B191FE600319ABE /* ChatViewController.m */; };
 		46D6876C1B0D3C8200856BEA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D6876B1B0D3C8200856BEA /* main.m */; };
 		46D6876F1B0D3C8200856BEA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D6876E1B0D3C8200856BEA /* AppDelegate.m */; };
 		46D687721B0D3C8200856BEA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D687711B0D3C8200856BEA /* ViewController.m */; };
@@ -21,7 +22,6 @@
 		46D687C51B0D47FB00856BEA /* soundcloudPlayer.html in Resources */ = {isa = PBXBuildFile; fileRef = 46D687C41B0D47FB00856BEA /* soundcloudPlayer.html */; };
 		46D687CB1B0D519100856BEA /* DMPagerNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D687C81B0D519100856BEA /* DMPagerNavigationBar.m */; };
 		46D687CC1B0D519100856BEA /* DMPagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D687CA1B0D519100856BEA /* DMPagerViewController.m */; };
-		46D687D01B0E677E00856BEA /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D687CF1B0E677E00856BEA /* ChatViewController.m */; };
 		46D687D31B0E687500856BEA /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D687D21B0E687500856BEA /* SettingsViewController.m */; };
 		C015D057286CE453222DD1BD /* libPods-MusicalChairsBeta.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 67145E1268DADCB5C8DC4A0D /* libPods-MusicalChairsBeta.a */; };
 /* End PBXBuildFile section */
@@ -37,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4615DFDF1B191FE600319ABE /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
+		4615DFE01B191FE600319ABE /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
 		46D687661B0D3C8200856BEA /* MusicalChairsBeta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicalChairsBeta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46D6876A1B0D3C8200856BEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46D6876B1B0D3C8200856BEA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -63,8 +65,6 @@
 		46D687C81B0D519100856BEA /* DMPagerNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMPagerNavigationBar.m; sourceTree = "<group>"; };
 		46D687C91B0D519100856BEA /* DMPagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMPagerViewController.h; sourceTree = "<group>"; };
 		46D687CA1B0D519100856BEA /* DMPagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMPagerViewController.m; sourceTree = "<group>"; };
-		46D687CE1B0E677E00856BEA /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
-		46D687CF1B0E677E00856BEA /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
 		46D687D11B0E687500856BEA /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		46D687D21B0E687500856BEA /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		67145E1268DADCB5C8DC4A0D /* libPods-MusicalChairsBeta.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MusicalChairsBeta.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -199,8 +199,8 @@
 		46D687CD1B0E673300856BEA /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				46D687CE1B0E677E00856BEA /* ChatViewController.h */,
-				46D687CF1B0E677E00856BEA /* ChatViewController.m */,
+				4615DFDF1B191FE600319ABE /* ChatViewController.h */,
+				4615DFE01B191FE600319ABE /* ChatViewController.m */,
 				46D687701B0D3C8200856BEA /* ViewController.h */,
 				46D687711B0D3C8200856BEA /* ViewController.m */,
 				46D687D11B0E687500856BEA /* SettingsViewController.h */,
@@ -356,9 +356,9 @@
 			files = (
 				46D687BD1B0D3F3000856BEA /* DraggableViewBackground.m in Sources */,
 				46D687BF1B0D3F3000856BEA /* OverlayView.m in Sources */,
-				46D687D01B0E677E00856BEA /* ChatViewController.m in Sources */,
 				46D687721B0D3C8200856BEA /* ViewController.m in Sources */,
 				46D6876F1B0D3C8200856BEA /* AppDelegate.m in Sources */,
+				4615DFE11B191FE600319ABE /* ChatViewController.m in Sources */,
 				46D6876C1B0D3C8200856BEA /* main.m in Sources */,
 				46D687C31B0D411900856BEA /* SCLPlayerViewController.m in Sources */,
 				46D687CB1B0D519100856BEA /* DMPagerNavigationBar.m in Sources */,

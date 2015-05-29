@@ -2,16 +2,16 @@
 //  ChatViewController.h
 //  MusicalChairsBeta
 //
-//  Created by Mac Admin on 5/21/15.
+//  Created by Mac Admin on 5/29/15.
 //  Copyright (c) 2015 BG. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "JSQMessagesViewController.h"
 #import "DMPagerViewController.h"
 
 @class DMPagerNavigationBarItem;
 
-@interface ChatViewController : UIViewController <DMPagerViewControllerProtocol>
+@interface ChatViewController : JSQMessagesViewController <DMPagerViewControllerProtocol>
 
 @property (nonatomic, strong) DMPagerNavigationBarItem *pagerObj;
 

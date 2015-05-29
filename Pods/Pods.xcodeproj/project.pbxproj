@@ -49,6 +49,10 @@
 		3EFB0CE97B4322CE1C265402 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86ABA7482DBA003D0FE7E38A /* UIKit.framework */; };
 		3F682A2A4AD1FE94D9D20B37 /* UIColor+JSQMessages.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC480D482DDBDF858E8F1A /* UIColor+JSQMessages.m */; };
 		445A4D03F2C5C99B411990CA /* JSQMessagesMediaViewBubbleImageMasker.h in Headers */ = {isa = PBXBuildFile; fileRef = A7C0C1E9B90798A6524514F3 /* JSQMessagesMediaViewBubbleImageMasker.h */; };
+		4615DFE21B19204900319ABE /* libPods-MusicalChairsBeta-Bolts.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DFB8516F6785CF8A70D1B6BC /* libPods-MusicalChairsBeta-Bolts.a */; };
+		4615DFE31B19204900319ABE /* libPods-MusicalChairsBeta-JSQMessagesViewController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 405D2A9D9E798AC50F23BB71 /* libPods-MusicalChairsBeta-JSQMessagesViewController.a */; };
+		4615DFE41B19204900319ABE /* libPods-MusicalChairsBeta-JSQSystemSoundPlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 97E0BF7663E884918B55516C /* libPods-MusicalChairsBeta-JSQSystemSoundPlayer.a */; };
+		4615DFE51B19204900319ABE /* libPods-MusicalChairsBeta-Parse.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D80C11A746F5825BA7BD8804 /* libPods-MusicalChairsBeta-Parse.a */; };
 		462E8D2A9034A2302C482958 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A50BC21741497267F83A2EDD /* AudioToolbox.framework */; };
 		47BB84279DFDBA73AA8962C4 /* PFObject+Subclass.h in Headers */ = {isa = PBXBuildFile; fileRef = A94EC8B6F2E5F4E2ABC463F7 /* PFObject+Subclass.h */; };
 		4AE43D801EB8878533453CCB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D534B8A0D38359266E96076 /* QuartzCore.framework */; };
@@ -409,6 +413,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4615DFE21B19204900319ABE /* libPods-MusicalChairsBeta-Bolts.a in Frameworks */,
+				4615DFE31B19204900319ABE /* libPods-MusicalChairsBeta-JSQMessagesViewController.a in Frameworks */,
+				4615DFE41B19204900319ABE /* libPods-MusicalChairsBeta-JSQSystemSoundPlayer.a in Frameworks */,
+				4615DFE51B19204900319ABE /* libPods-MusicalChairsBeta-Parse.a in Frameworks */,
 				CC7B7FB00E46026C447D7215 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
