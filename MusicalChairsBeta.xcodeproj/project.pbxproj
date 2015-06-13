@@ -10,6 +10,7 @@
 		4615DFE11B191FE600319ABE /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4615DFE01B191FE600319ABE /* ChatViewController.m */; };
 		4615DFE81B192F5800319ABE /* BGPagingDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4615DFE71B192F5800319ABE /* BGPagingDelegate.m */; };
 		467441001B2CDCCE002D5F08 /* ArtistTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 467440FF1B2CDCCE002D5F08 /* ArtistTableViewController.m */; };
+		467441071B2CDFC5002D5F08 /* BGTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 467441061B2CDFC5002D5F08 /* BGTableViewCell.m */; };
 		46D6876C1B0D3C8200856BEA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D6876B1B0D3C8200856BEA /* main.m */; };
 		46D6876F1B0D3C8200856BEA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D6876E1B0D3C8200856BEA /* AppDelegate.m */; };
 		46D687721B0D3C8200856BEA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D687711B0D3C8200856BEA /* ViewController.m */; };
@@ -45,6 +46,8 @@
 		4615DFE71B192F5800319ABE /* BGPagingDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BGPagingDelegate.m; path = MusicalChairsBeta/BGPagingDelegate.m; sourceTree = "<group>"; };
 		467440FE1B2CDCCE002D5F08 /* ArtistTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtistTableViewController.h; sourceTree = "<group>"; };
 		467440FF1B2CDCCE002D5F08 /* ArtistTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtistTableViewController.m; sourceTree = "<group>"; };
+		467441051B2CDFC5002D5F08 /* BGTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGTableViewCell.h; sourceTree = "<group>"; };
+		467441061B2CDFC5002D5F08 /* BGTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGTableViewCell.m; sourceTree = "<group>"; };
 		46D687661B0D3C8200856BEA /* MusicalChairsBeta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicalChairsBeta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46D6876A1B0D3C8200856BEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46D6876B1B0D3C8200856BEA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -104,6 +107,15 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		467441041B2CDFAE002D5F08 /* BGTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				467441051B2CDFC5002D5F08 /* BGTableViewCell.h */,
+				467441061B2CDFC5002D5F08 /* BGTableViewCell.m */,
+			);
+			name = BGTableViewCell;
+			sourceTree = "<group>";
+		};
 		46D6875D1B0D3C8200856BEA = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +142,7 @@
 		46D687681B0D3C8200856BEA /* MusicalChairsBeta */ = {
 			isa = PBXGroup;
 			children = (
+				467441041B2CDFAE002D5F08 /* BGTableViewCell */,
 				467440F71B2A3639002D5F08 /* Model */,
 				46D687CD1B0E673300856BEA /* View Controllers */,
 				46D6876D1B0D3C8200856BEA /* AppDelegate.h */,
@@ -376,6 +389,7 @@
 				46D687BF1B0D3F3000856BEA /* OverlayView.m in Sources */,
 				46D687721B0D3C8200856BEA /* ViewController.m in Sources */,
 				46D6876F1B0D3C8200856BEA /* AppDelegate.m in Sources */,
+				467441071B2CDFC5002D5F08 /* BGTableViewCell.m in Sources */,
 				467441001B2CDCCE002D5F08 /* ArtistTableViewController.m in Sources */,
 				4615DFE11B191FE600319ABE /* ChatViewController.m in Sources */,
 				46D6876C1B0D3C8200856BEA /* main.m in Sources */,
