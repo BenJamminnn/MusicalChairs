@@ -9,11 +9,12 @@
 #import "AppDelegate.h"
 #import "DMPagerViewController.h"
 #import "ViewController.h"
-#import "ChatViewController.h"
 #import "SettingsViewController.h"
-
+#import "BGPagingDelegate.h"
+#import "ArtistTableViewController.h"
 @interface AppDelegate ()
 @property (nonatomic, strong) DMPagerViewController *pagingController;
+@property (nonatomic, strong) BGPagingDelegate *pagingDelegate;
 @end
 
 @implementation AppDelegate
@@ -35,20 +36,24 @@
     ViewController *chooseArtistViewController = [[ViewController alloc]init];
     chooseArtistViewController.pagerObj = [DMPagerNavigationBarItem newItemWithText:chooseArtist andIcon:[UIImage imageNamed:@"chat_full"] renderingMode:DMPagerNavigationBarItemModeOnlyImage];
     
-    ChatViewController *chatController = [ChatViewController new];
+    ArtistTableViewController *chatController = [ArtistTableViewController new];
     chatController.pagerObj = [DMPagerNavigationBarItem newItemWithText:chat andIcon:[UIImage imageNamed:@"rchat"]renderingMode:DMPagerNavigationBarItemModeOnlyImage];
     
     SettingsViewController *settingsController = [SettingsViewController new];
     settingsController.pagerObj = [DMPagerNavigationBarItem newItemWithText:settings andIcon:[UIImage imageNamed:@"gear"]renderingMode:DMPagerNavigationBarItemModeOnlyImage];
     
     //CREATING PAGING CONTROLLER
-    self.pagingController = [[DMPagerViewController alloc]initWithViewControllers:@[settingsController, chooseArtistViewController, chatController]];
+    self.pagingController = [[DMPagerViewController alloc]initWithViewControllers:@[chatController, settingsController, chooseArtistViewController]];
     
     UIColor *inactiveColor = [UIColor lightGrayColor];
     UIColor *activeColor = [UIColor redColor];
     self.pagingController.navigationBar.activeItemColor = activeColor;
     self.pagingController.navigationBar.inactiveItemColor = inactiveColor;
+    
+    self.pagingDelegate = [BGPagingDelegate new];
+    self.pagingController.delegate = self.pagingDelegate;
     self.pagingController.animation = DMPagerViewControllerAnimationEaseInOut;
+    [self.pagingController setPageIndex:0 animated:NO];
     self.window.rootViewController = self.pagingController;
     
     return YES;

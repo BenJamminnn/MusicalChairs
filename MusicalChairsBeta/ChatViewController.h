@@ -15,4 +15,7 @@
 
 @property (nonatomic, strong) DMPagerNavigationBarItem *pagerObj;
 
+- (void)dismissKeyboard;
+
+
 @end

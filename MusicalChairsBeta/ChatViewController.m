@@ -8,18 +8,16 @@
 
 #import "ChatViewController.h"
 #import <Parse.h>
+
 //#define kFirechatNS @"https://firechat-ios.musical-chairs.firebaseIO.com/"
 
 @interface ChatViewController ()
-
-
 @end
 
 @implementation ChatViewController
 
-
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
 }
 
 - (void)viewDidLoad {
@@ -31,15 +29,24 @@
     //testing
     self.senderId = @"Ben";
     self.senderDisplayName = @"Ben";
-    
-    
+    self.automaticallyScrollsToMostRecentMessage = YES;
+}
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [super touchesBegan:touches withEvent:event];
+    [self dismissKeyboard];
 
 }
 
+- (void)dismissKeyboard {
+    [self.inputToolbar.contentView.textView resignFirstResponder];
+}
 
-#pragma mark - overriden methods
+#pragma mark - overridden methods
 
 - (void)didPressSendButton:(UIButton *)button withMessageText:(NSString *)text senderId:(NSString *)senderId senderDisplayName:(NSString *)senderDisplayName date:(NSDate *)date {
+    [self finishSendingMessageAnimated:YES];
 }
 
 - (void)didPressAccessoryButton:(UIButton *)sender {
