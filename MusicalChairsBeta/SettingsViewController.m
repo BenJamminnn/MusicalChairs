@@ -11,6 +11,10 @@
 
 @implementation SettingsViewController
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+}
+
 - (DMPagerNavigationBarItem *)pagerItem {
     return self.pagerObj;
 }

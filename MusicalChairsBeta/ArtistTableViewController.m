@@ -8,6 +8,7 @@
 
 #import "ArtistTableViewController.h"
 #import "BGTableViewCell.h"
+#import "ChatViewController.h"
 
 static NSString *const cellId = @"BGCell";
 
@@ -31,7 +32,7 @@ static NSString *const cellId = @"BGCell";
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 3;
+    return 6;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -65,41 +66,25 @@ static NSString *const cellId = @"BGCell";
     return self.pagerObj;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    /*
+    reference correct friend with [_friends objectAtIndex:indexPath.row]
+    unpack chat log with friend, query pfuser, get back chat log
+    init JSQMessagesController with chat log
+    instantiate within a nav?
+    */
+    CATransition *push = [CATransition animation];
+    push.type = kCATransitionPush;
+    push.subtype = kCATransitionFromRight;
+    push.duration = 0.3;
+    [self.view.window.layer addAnimation:push forKey:nil];
 
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
+    ChatViewController *messsagesVC = [ChatViewController messagesViewController];
+    UINavigationController *navController = [[UINavigationController alloc]initWithRootViewController:messsagesVC];
+    [self presentViewController:navController animated:NO completion:nil];
 }
-*/
 
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
 
 /*
 #pragma mark - Navigation

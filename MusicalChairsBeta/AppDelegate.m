@@ -43,7 +43,7 @@
     settingsController.pagerObj = [DMPagerNavigationBarItem newItemWithText:settings andIcon:[UIImage imageNamed:@"gear"]renderingMode:DMPagerNavigationBarItemModeOnlyImage];
     
     //CREATING PAGING CONTROLLER
-    self.pagingController = [[DMPagerViewController alloc]initWithViewControllers:@[chatController, settingsController, chooseArtistViewController]];
+    self.pagingController = [[DMPagerViewController alloc]initWithViewControllers:@[ settingsController, chooseArtistViewController, chatController]];
     
     UIColor *inactiveColor = [UIColor lightGrayColor];
     UIColor *activeColor = [UIColor redColor];

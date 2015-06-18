@@ -16,13 +16,17 @@
 
 @implementation ChatViewController
 
-- (void)viewWillDisappear:(BOOL)animated {
-    [super viewWillDisappear:animated];
-}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.navigationItem.title = @"CHAT";
+
+    UIBarButtonItem *leftButton = [[UIBarButtonItem alloc] initWithTitle:@"Dismiss" style:UIBarButtonItemStylePlain target:self action:@selector(dismissChatViewController:)];
+    UIBarButtonItem *rightButton = [[UIBarButtonItem alloc]initWithTitle:@"More" style:UIBarButtonItemStylePlain target:self action:@selector(moreButtonTapped:)];
+    self.navigationItem.rightBarButtonItem = rightButton;
+    self.navigationItem.leftBarButtonItem = leftButton;
+
     //springy bubbles
     self.collectionView.collectionViewLayout.springinessEnabled = YES;
     
@@ -30,13 +34,21 @@
     self.senderId = @"Ben";
     self.senderDisplayName = @"Ben";
     self.automaticallyScrollsToMostRecentMessage = YES;
+    
+}
+
+- (void)dismissChatViewController:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)moreButtonTapped:(id)sender {
+    
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
     [super touchesBegan:touches withEvent:event];
     [self dismissKeyboard];
-
 }
 
 - (void)dismissKeyboard {
@@ -51,10 +63,6 @@
 
 - (void)didPressAccessoryButton:(UIButton *)sender {
     
-}
-
-- (DMPagerNavigationBarItem *)pagerItem {
-    return self.pagerObj;
 }
 
 @end

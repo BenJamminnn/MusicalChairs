@@ -7,13 +7,11 @@
 //
 
 #import "JSQMessagesViewController.h"
-#import "DMPagerViewController.h"
 
 @class DMPagerNavigationBarItem;
 
-@interface ChatViewController : JSQMessagesViewController <DMPagerViewControllerProtocol>
+@interface ChatViewController : JSQMessagesViewController
 
-@property (nonatomic, strong) DMPagerNavigationBarItem *pagerObj;
 
 - (void)dismissKeyboard;
 
